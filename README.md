@@ -1,18 +1,30 @@
-# Tour Enquiry Management Platform
+# Growfinix Technology Internship Projects
+
+A collection of full-stack projects developed as part of my Growfinix Technology internship.
+
+These projects demonstrate frontend development, backend APIs, database integration, authentication, cloud services, image storage, and AI-powered features.
+
+---
+
+## Task 1 — Secure Authentication
+
+A secure authentication system with user registration, login, protected routes, and authentication handling.
+
+### Technology
+
+- React
+- Node.js
+- Express.js
+- PostgreSQL
+- Authentication
+
+---
+
+## Task 2 — Tour Enquiry Management Platform
 
 A full-stack web application for managing customer tour enquiries.
 
-Built as **Task 2 for Growfinix Technology** using React, Tailwind CSS, Node.js, Express.js, and PostgreSQL.
-
-## Live Demo
-
-Frontend:
-https://growfinix-six.vercel.app
-
-Backend API:
-https://growfinix-task-2-api.onrender.com
-
-## Features
+### Features
 
 - Create new tour enquiries
 - View all enquiries
@@ -21,55 +33,101 @@ https://growfinix-task-2-api.onrender.com
 - Manage enquiry status
 - Search enquiries
 - Filter enquiries by status
-- Responsive desktop table
-- Responsive mobile cards
-- Form validation
-- Success and error messages
-- PostgreSQL database integration
-- REST API
+- Responsive interface
 
-## Technology Stack
+### Tech Stack
 
-### Frontend
 - React
 - Vite
 - Tailwind CSS
-
-### Backend
 - Node.js
 - Express.js
-- CORS
-- REST API
-
-### Database
 - PostgreSQL
-- Neon PostgreSQL
 
-### Deployment
-- Vercel — Frontend
-- Render — Backend
-- Neon — Database
+### Live Demo
 
-## Project Structure
+https://growfinix-six.vercel.app
+
+### Backend API
+
+https://growfinix-task-2-api.onrender.com
+
+---
+
+## Task 3 — Dynamic Real Estate Property Listing
+
+A dynamic property listing platform where administrators can add property details and upload property images.
+
+### Features
+
+- Add property listings
+- Upload property images
+- Cloudinary image storage
+- Display dynamic listings
+- Edit properties
+- Delete properties
+- Search properties
+- Filter properties
+- Responsive property cards
+
+### Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- Node.js
+- Express.js
+- PostgreSQL
+- Cloudinary
+
+### Live Demo
+
+https://growfinix-2db4.vercel.app
+
+### Backend API
+
+https://growfinix-task-3-api.onrender.com
+
+---
+
+## Task 4 — Markdown Blog with AI Auto-Tagging
+
+A full-stack Markdown Blog CMS that automatically generates relevant tags for blog posts using AI.
+
+### Features
+
+- Create blog posts using Markdown
+- Live Markdown preview
+- AI-powered automatic tag generation
+- PostgreSQL database storage
+- Search articles
+- Delete articles
+- Responsive admin dashboard
+- AI tagging workflow
+
+### Tech Stack
+
+- React
+- Vite
+- Tailwind CSS
+- Node.js
+- Express.js
+- PostgreSQL
+- Hugging Face AI
+
+### How It Works
 
 ```text
-growfinix-task-2/
-│
-├── client/
-│   ├── src/
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── index.css
-│   ├── package.json
-│   └── ...
-│
-├── server/
-│   ├── routes/
-│   │   └── enquiryRoutes.js
-│   ├── db.js
-│   ├── server.js
-│   ├── package.json
-│   └── ...
-│
-├── .gitignore
-└── README.md
+Admin writes a Markdown article
+        ↓
+React frontend
+        ↓
+Node.js + Express backend
+        ↓
+AI analyzes the article
+        ↓
+Relevant tags are generated
+        ↓
+Post + tags are stored in PostgreSQL
+        ↓
+Article appears in the dashboard
