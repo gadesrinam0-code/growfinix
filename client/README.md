@@ -1,16 +1,63 @@
-# React + Vite
+# Tour Enquiry Management Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application for managing customer tour enquiries.
 
-Currently, two official plugins are available:
+This project was developed as **Task 2** of my Growfinix Technology internship. It provides a simple and responsive platform for creating, viewing, updating, searching, filtering, and deleting customer tour enquiries.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Create new tour enquiries
+- View all customer enquiries
+- Edit existing enquiries
+- Delete enquiries
+- Update enquiry status
+- Search enquiries
+- Filter enquiries by status
+- Responsive user interface
+- Persistent database storage
+- REST API integration
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+
+### Backend
+
+- Node.js
+- Express.js
+
+### Database
+
+- PostgreSQL
+- Neon
+
+### Deployment
+
+- Vercel — Frontend
+- Render — Backend
+
+---
+
+## Application Flow
+
+```text
+User
+  ↓
+React Frontend
+  ↓
+REST API
+  ↓
+Node.js + Express
+  ↓
+PostgreSQL Database
+  ↓
+Customer Enquiry Data
