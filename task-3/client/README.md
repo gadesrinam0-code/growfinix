@@ -1,16 +1,74 @@
-# React + Vite
+# Task 3 — Dynamic Real Estate Property Listing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack real estate property listing application developed as part of the Growfinix Technology internship.
 
-Currently, two official plugins are available:
+The application allows administrators to add, edit, and delete property listings with images, while users can browse and search dynamically stored properties.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Add new property listings
+- Upload property images
+- Store images using Cloudinary
+- Store property details in PostgreSQL
+- View dynamic property listings
+- Edit existing properties
+- Delete properties
+- Search properties
+- Filter property listings
+- Responsive property cards
+- REST API integration
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Tech Stack
+
+### Frontend
+
+- React
+- Vite
+- Tailwind CSS
+- JavaScript
+
+### Backend
+
+- Node.js
+- Express.js
+
+### Database
+
+- PostgreSQL
+- Neon
+
+### Image Storage
+
+- Cloudinary
+
+### Deployment
+
+- Vercel
+- Render
+
+---
+
+## Application Flow
+
+```text
+Admin
+  ↓
+Enter Property Details
+  ↓
+Select Property Image
+  ↓
+React Frontend
+  ↓
+Node.js + Express API
+  ↓
+Image Upload to Cloudinary
+  ↓
+Property Details Stored in PostgreSQL
+  ↓
+Properties Retrieved through REST API
+  ↓
+Property Listings Displayed
