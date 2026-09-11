@@ -1,133 +1,70 @@
-# Growfinix Technology Internship Projects
+# Task 4 — Markdown Blog with AI Auto-Tagging
 
-A collection of full-stack projects developed as part of my Growfinix Technology internship.
+A full-stack Markdown Blog CMS developed as part of the Growfinix Technology internship.
 
-These projects demonstrate frontend development, backend APIs, database integration, authentication, cloud services, image storage, and AI-powered features.
-
----
-
-## Task 1 — Secure Authentication
-
-A secure authentication system with user registration, login, protected routes, and authentication handling.
-
-### Technology
-
-- React
-- Node.js
-- Express.js
-- PostgreSQL
-- Authentication
+The application allows users to create Markdown-based blog posts. When a post is published, the backend sends the article content to an AI service to generate relevant tags automatically. The post and generated tags are then stored in PostgreSQL and displayed in the blog dashboard.
 
 ---
 
-## Task 2 — Tour Enquiry Management Platform
+## Features
 
-A full-stack web application for managing customer tour enquiries.
-
-### Features
-
-- Create new tour enquiries
-- View all enquiries
-- Edit existing enquiries
-- Delete enquiries
-- Manage enquiry status
-- Search enquiries
-- Filter enquiries by status
-- Responsive interface
-
-### Tech Stack
-
-- React
-- Vite
-- Tailwind CSS
-- Node.js
-- Express.js
-- PostgreSQL
-
-### Live Demo
-
-https://growfinix-six.vercel.app
-
-### Backend API
-
-https://growfinix-task-2-api.onrender.com
-
----
-
-## Task 3 — Dynamic Real Estate Property Listing
-
-A dynamic property listing platform where administrators can add property details and upload property images.
-
-### Features
-
-- Add property listings
-- Upload property images
-- Cloudinary image storage
-- Display dynamic listings
-- Edit properties
-- Delete properties
-- Search properties
-- Filter properties
-- Responsive property cards
-
-### Tech Stack
-
-- React
-- Vite
-- Tailwind CSS
-- Node.js
-- Express.js
-- PostgreSQL
-- Cloudinary
-
-### Live Demo
-
-https://growfinix-2db4.vercel.app
-
-### Backend API
-
-https://growfinix-task-3-api.onrender.com
-
----
-
-## Task 4 — Markdown Blog with AI Auto-Tagging
-
-A full-stack Markdown Blog CMS that automatically generates relevant tags for blog posts using AI.
-
-### Features
-
-- Create blog posts using Markdown
+- Create Markdown blog posts
 - Live Markdown preview
 - AI-powered automatic tag generation
-- PostgreSQL database storage
+- PostgreSQL database integration
+- View published articles
 - Search articles
 - Delete articles
 - Responsive admin dashboard
-- AI tagging workflow
+- REST API integration
+- Persistent data storage
 
-### Tech Stack
+---
+
+## Tech Stack
+
+### Frontend
 
 - React
 - Vite
 - Tailwind CSS
+- JavaScript
+- React Markdown
+
+### Backend
+
 - Node.js
 - Express.js
-- PostgreSQL
-- Hugging Face AI
 
-### How It Works
+### Database
+
+- PostgreSQL
+- Neon
+
+### AI
+
+- Hugging Face
+
+### Deployment
+
+- Vercel
+- Render
+
+---
+
+## How It Works
 
 ```text
-Admin writes a Markdown article
+Admin writes a blog post
         ↓
-React frontend
+React Frontend
         ↓
-Node.js + Express backend
+Node.js + Express Backend
         ↓
-AI analyzes the article
+AI analyzes the post content
         ↓
 Relevant tags are generated
         ↓
-Post + tags are stored in PostgreSQL
+Post + AI tags stored in PostgreSQL
         ↓
-Article appears in the dashboard
+Articles displayed in the dashboard
