@@ -1,70 +1,109 @@
-# Task 4 — Markdown Blog with AI Auto-Tagging
+﻿# Growfinix Technology Internship Projects
 
-A full-stack Markdown Blog CMS developed as part of the Growfinix Technology internship.
+This repository contains the projects completed as part of my Growfinix Technology Internship.
 
-The application allows users to create Markdown-based blog posts. When a post is published, the backend sends the article content to an AI service to generate relevant tags automatically. The post and generated tags are then stored in PostgreSQL and displayed in the blog dashboard.
+## Task 1 — Secure Authentication System
 
----
+- React
+- Node.js
+- Express
+- JWT authentication
+- Password hashing
+- Database integration
 
-## Features
+Folder: task-1
 
-- Create Markdown blog posts
-- Live Markdown preview
-- AI-powered automatic tag generation
-- PostgreSQL database integration
-- View published articles
-- Search articles
-- Delete articles
-- Responsive admin dashboard
-- REST API integration
-- Persistent data storage
+## Task 2 — Tour Enquiry Management Platform
 
----
+- React
+- Tailwind CSS
+- Node.js
+- Express
+- PostgreSQL
+- CRUD REST API
+- Responsive dashboard
 
-## Tech Stack
+Folders: client/ and server/
 
-### Frontend
+> client/ and server/ together represent Task 2.
+
+Live Frontend:
+https://growfinix-six.vercel.app
+
+Backend API:
+https://growfinix-task-2-api.onrender.com
+
+## Task 3 — Dynamic Real Estate Property Listing
 
 - React
 - Vite
 - Tailwind CSS
-- JavaScript
-- React Markdown
-
-### Backend
-
 - Node.js
-- Express.js
-
-### Database
-
+- Express
 - PostgreSQL
-- Neon
+- Cloudinary
+- Property CRUD
+- Search and filtering
 
-### AI
+Folder: task-3
 
+Live Application:
+https://growfinix-2db4.vercel.app
+
+Backend API:
+https://growfinix-task-3-api.onrender.com
+
+## Task 4 — Markdown Blog with AI Auto-Tagging
+
+- React
+- Vite
+- Tailwind CSS
+- Node.js
+- Express
+- PostgreSQL
 - Hugging Face
+- Markdown editor
+- AI-generated tags
+- Search and delete
 
-### Deployment
+Folder: task-4
 
-- Vercel
-- Render
+Live Application:
+https://growfinix-task-4-blog.vercel.app
 
----
+Backend API:
+https://growfinix-task-4-api.onrender.com/api/posts
 
-## How It Works
+## Task 5 — End-to-End App Deployment
 
-```text
-Admin writes a blog post
-        ↓
-React Frontend
-        ↓
-Node.js + Express Backend
-        ↓
-AI analyzes the post content
-        ↓
-Relevant tags are generated
-        ↓
-Post + AI tags stored in PostgreSQL
-        ↓
-Articles displayed in the dashboard
+The full-stack blog application was deployed to the live internet.
+
+- Vercel — Frontend
+- Render — Backend
+- Supabase PostgreSQL — Database
+- Hugging Face — AI service
+
+Folder: task-5
+
+Live Application:
+https://growfinix-task-4-blog.vercel.app
+
+## Repository Structure
+
+growfinx/
+├── client/       # Task 2 Frontend
+├── server/       # Task 2 Backend
+├── task-1/       # Task 1
+├── task-3/       # Task 3
+├── task-4/       # Task 4
+├── task-5/       # Task 5
+├── .gitignore
+└── README.md
+
+## Internship
+
+Growfinix Technology Internship
+
+## Author
+
+Gade Srinam
